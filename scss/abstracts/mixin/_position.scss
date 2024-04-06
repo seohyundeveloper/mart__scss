@@ -1,0 +1,4 @@
+@mixin position($state, $cordinate_name, $cordinate_value) {
+  position: $state;
+  #{$cordinate_name}: $cordinate_value; 
+}

@@ -8,6 +8,9 @@ $alarmColor: mint $mint, green $green;
   display: grid;
   grid-template-columns: min-content 1fr;
   gap: rem(8);
+  padding: rem(10) rem(12) rem(10) rem(8);
+  border-radius: rem(30);
+  box-sizing: border-box;
   &__color {
     // 뱃지 디자인
     padding: rem(2) rem(8);

@@ -4,16 +4,34 @@
   @include scroll(b, rem(5), rgba($gray1e, 0.5), 0);
   overflow-x: auto;
   display: flex;
+  gap: rem(16);
   a {
     display: block;
     width: rem(72);
     height: rem(72);
+    border-radius: rem(20);
   }
   @for $index from 1 through 5 {
     .item#{$index} {
       a{
-        @include background('item#{$index}.png', center, $grayd6, contain);
+        @include background('item#{$index}.png', center, $graye5, contain);
+        > .--active {
+          background-color: $orange;
+          padding: rem(2) rem(6);
+          color: $white;
+          border-radius: rem(20);
+        }
       }
     }
   }
+}
+
+//fixed-gnb
+.gnb-list{
+  @include position(fixed, bottom, 0);
+  display: flex;
+  // > li {
+  //   display: flex;
+  //   flex-direction: column;
+  // };
 }

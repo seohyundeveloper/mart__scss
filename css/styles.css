@@ -179,6 +179,9 @@ body {
   display: grid;
   grid-template-columns: min-content 1fr;
   gap: 0.8rem;
+  padding: 1rem 1.2rem 1rem 0.8rem;
+  border-radius: 3rem;
+  box-sizing: border-box;
 }
 .alarm__color {
   padding: 0.2rem 0.8rem;
@@ -200,6 +203,7 @@ body {
 .category-list {
   overflow-x: auto;
   display: flex;
+  gap: 1.6rem;
 }
 .category-list::-webkit-scrollbar {
   height: 0.5rem;
@@ -216,26 +220,63 @@ body {
   display: block;
   width: 7.2rem;
   height: 7.2rem;
+  border-radius: 2rem;
 }
 .category-list .item1 a {
-  background: url(../images/item1.png) no-repeat center #D6D9E1;
+  background: url(../images/item1.png) no-repeat center #E5E8F0;
   background-size: contain;
+}
+.category-list .item1 a > .--active {
+  background-color: #FF6A13;
+  padding: 0.2rem 0.6rem;
+  color: #FFFFFF;
+  border-radius: 2rem;
 }
 .category-list .item2 a {
-  background: url(../images/item2.png) no-repeat center #D6D9E1;
+  background: url(../images/item2.png) no-repeat center #E5E8F0;
   background-size: contain;
+}
+.category-list .item2 a > .--active {
+  background-color: #FF6A13;
+  padding: 0.2rem 0.6rem;
+  color: #FFFFFF;
+  border-radius: 2rem;
 }
 .category-list .item3 a {
-  background: url(../images/item3.png) no-repeat center #D6D9E1;
+  background: url(../images/item3.png) no-repeat center #E5E8F0;
   background-size: contain;
+}
+.category-list .item3 a > .--active {
+  background-color: #FF6A13;
+  padding: 0.2rem 0.6rem;
+  color: #FFFFFF;
+  border-radius: 2rem;
 }
 .category-list .item4 a {
-  background: url(../images/item4.png) no-repeat center #D6D9E1;
+  background: url(../images/item4.png) no-repeat center #E5E8F0;
   background-size: contain;
 }
+.category-list .item4 a > .--active {
+  background-color: #FF6A13;
+  padding: 0.2rem 0.6rem;
+  color: #FFFFFF;
+  border-radius: 2rem;
+}
 .category-list .item5 a {
-  background: url(../images/item5.png) no-repeat center #D6D9E1;
+  background: url(../images/item5.png) no-repeat center #E5E8F0;
   background-size: contain;
+}
+.category-list .item5 a > .--active {
+  background-color: #FF6A13;
+  padding: 0.2rem 0.6rem;
+  color: #FFFFFF;
+  border-radius: 2rem;
+}
+
+.gnb-list {
+  position: fixed;
+  bottom: 0;
+  display: flex;
 }
 
 .box.white {
