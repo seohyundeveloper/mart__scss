@@ -1,0 +1,7 @@
+$imgUrl: '../images/';
+// $imgUrl: '/images/'; // 배포용
+
+@mixin background($image, $coordinate: null, $color: null, $size: null) {
+  background: url(#{$imgUrl}#{$image}) no-repeat $coordinate $color;
+  background-size: $size;
+}

@@ -1,0 +1,23 @@
+
+@use 'background' as *;
+
+@mixin bar($method, $width, $height, $margin, $background) {
+  display: flex;
+  > * {
+    display: flex;  //  content는 인라인요소라서 블럭요소로 변화하기 위해서 사용!
+    align-items: center;
+    + * {
+      &::before {
+        content: '';
+        width: $width;
+        height: $height;
+        margin: 0 $margin;
+        @if  $method == 'line'  or $method == '1' {
+          background-color: $background;
+        } @else if $method == 'image' or $method =='img' or $method == 'i' {
+          @include background($background, null, null, contain);     
+        }
+      }
+    }
+  }
+}

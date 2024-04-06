@@ -1,0 +1,18 @@
+@use '../abstracts/' as *;
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: rem(12);
+  &__thumbnail {
+    img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      border-radius: rem(8);
+    }
+  }
+  &__title {
+    @include ellipsis(2);
+  }
+}

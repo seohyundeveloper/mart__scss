@@ -1,0 +1,37 @@
+@use '../abstracts/' as *;
+@use 'sass:list';  // 내장 함수 사용위해 불러오기
+
+$boxType: (
+  1: (
+    'class': white,
+    'padding': rem(24),
+    'radius': rem(16),
+    'shadow': 0 rem(4) rem(2) rgba(6, 6, 6, 0.02),
+    'bgColor': white,
+  ),
+  2: (
+    'class': mint,
+    'padding': rem(24),
+    'radius': rem(16),
+    'shadow': null,
+    'bgColor': $mint,
+  ),
+  3: (
+    'class': green,
+    'padding': rem(24),
+    'radius': rem(16),
+    'shadow': null,
+    'bgColor': $green,
+  ),
+);
+
+.box {
+  @for $index from 1 through list.length($boxType) {
+    &.#{map-get($boxType, $index, class)} {
+      padding: map-get($boxType, $index, padding);
+      border-radius: map-get($boxType, $index, radius);
+      box-shadow: map-get($boxType, $index, shadow);
+      background-color:  map-get($boxType, $index, bgColor);
+    }
+  }
+}

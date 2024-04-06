@@ -1,0 +1,27 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+
+$alarmColor: mint $mint, green $green;
+
+.alarm {
+  @include background('ico_arrow_right_white.svg', right rem(12) center, $gray1e);
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: rem(8);
+  &__color {
+    // 뱃지 디자인
+    padding: rem(2) rem(8);
+    border-radius: rem(20);
+    @each $class, $color in $alarmColor {
+      &.#{$class} {
+        background-color: $color;
+      }
+    }
+  }
+  &__text {
+    color: $white;
+    font-size: rem(13);
+    font-weight: 500;
+    line-height: rem(18);
+  }
+}

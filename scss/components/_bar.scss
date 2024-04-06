@@ -1,0 +1,16 @@
+@use '../abstracts/' as *;
+
+.bar-type1 {
+  @include bar(image, rem(10), rem(10), rem(5), "ico_bar.svg");
+  color: $gray55;
+  font-size: rem(13);
+  font-weight: 500;
+  line-height: rem(18);
+}
+.bar-type2 {
+  @include bar(line, rem(2), rem(10), rem(5), $mint);
+  color: $gray55;
+  font-size: rem(13);
+  font-weight: 500;
+  line-height: rem(18);
+}
