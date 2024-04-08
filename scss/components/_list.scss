@@ -26,12 +26,3 @@
   }
 }
 
-//fixed-gnb
-.gnb-list{
-  @include position(fixed, bottom, 0);
-  display: flex;
-  // > li {
-  //   display: flex;
-  //   flex-direction: column;
-  // };
-}

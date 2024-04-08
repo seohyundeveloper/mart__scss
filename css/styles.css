@@ -273,12 +273,6 @@ body {
   border-radius: 2rem;
 }
 
-.gnb-list {
-  position: fixed;
-  bottom: 0;
-  display: flex;
-}
-
 .box.white {
   padding: 2.4rem;
   border-radius: 1.6rem;
@@ -352,6 +346,50 @@ body {
   height: 1rem;
   margin: 0 0.5rem;
   background-color: #00D4EA;
+}
+
+.top-gnb {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem 2rem;
+}
+.top-gnb__left {
+  flex: 1;
+  display: flex;
+}
+.top-gnb__left-text {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: #060606;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.3rem;
+}
+.top-gnb__right {
+  display: flex;
+  gap: 1.6rem;
+  position: relative;
+}
+.top-gnb__right .basket__count {
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  border-radius: 4rem;
+  background-color: #ff3d45;
+  padding: 0.1rem 0.4rem;
+  position: absolute;
+  top: -0.5rem;
+  right: -1rem;
+}
+
+.gnb-list {
+  position: fixed;
+  bottom: 0;
+  display: flex;
 }
 
 /*# sourceMappingURL=styles.css.map */
