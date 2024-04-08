@@ -4,6 +4,7 @@
 $alarmColor: mint $mint, green $green;
 
 .alarm {
+  @include align(margin, top, 8);
   @include background('ico_arrow_right_white.svg', right rem(12) center, $gray1e);
   display: grid;
   grid-template-columns: min-content 1fr;

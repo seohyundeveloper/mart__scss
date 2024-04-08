@@ -175,6 +175,7 @@ body {
 }
 
 .alarm {
+  margin-top: 0.8rem;
   background: url(../images/ico_arrow_right_white.svg) no-repeat right 1.2rem center #1E2530;
   display: grid;
   grid-template-columns: min-content 1fr;
@@ -273,6 +274,9 @@ body {
   border-radius: 2rem;
 }
 
+.box {
+  margin-top: 1.6rem;
+}
 .box.white {
   padding: 2.4rem;
   border-radius: 1.6rem;
@@ -390,6 +394,30 @@ body {
   position: fixed;
   bottom: 0;
   display: flex;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #060606;
+  line-height: 29px;
+}
+
+.sub-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #060606;
+  line-height: 23px;
+}
+
+.text__align {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text__align-left {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=styles.css.map */

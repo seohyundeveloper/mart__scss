@@ -1,2 +1,12 @@
 //렌더링 되는 css만 필요하다.
 @use "./pages";
+
+.text__align {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-left{
+    display: flex;
+    flex-direction: column;
+  }
+}

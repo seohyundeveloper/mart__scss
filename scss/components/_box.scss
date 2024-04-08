@@ -26,6 +26,7 @@ $boxType: (
 );
 
 .box {
+  @include align(margin, top, 16);
   @for $index from 1 through list.length($boxType) {
     &.#{map-get($boxType, $index, class)} {
       padding: map-get($boxType, $index, padding);

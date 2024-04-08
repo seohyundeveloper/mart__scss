@@ -1,0 +1,8 @@
+@use '../abstracts/' as *;
+
+.title {
+  @include textType(18px, 700, $gray06, 29px);
+}
+.sub-title{
+  @include textType(15px, 500, $gray06, 23px);
+}

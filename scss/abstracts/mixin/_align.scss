@@ -1,0 +1,5 @@
+@use "../function" as *;
+
+@mixin align($text, $cordinate, $number) {
+  #{$text}-#{$cordinate}: rem($number);
+}
