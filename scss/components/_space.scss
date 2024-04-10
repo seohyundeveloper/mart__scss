@@ -3,3 +3,7 @@
 .space{
   @include space(margin, top, 16);
 }
+
+.space2 {
+  @include space(margin, top, 36);
+}

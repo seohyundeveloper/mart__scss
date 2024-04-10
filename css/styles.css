@@ -445,6 +445,10 @@ body {
   font-style: italic;
   letter-spacing: -0.128rem;
 }
+.item__align .ico__size {
+  width: 4.2252rem;
+  height: 4.2467rem;
+}
 
 .title__type1 {
   font-size: 18px;
@@ -480,6 +484,10 @@ body {
 
 .space {
   margin-top: 1.6rem;
+}
+
+.space2 {
+  margin-top: 3.6rem;
 }
 
 .container {
