@@ -482,4 +482,9 @@ body {
   margin-top: 1.6rem;
 }
 
+.container {
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
 /*# sourceMappingURL=styles.css.map */
