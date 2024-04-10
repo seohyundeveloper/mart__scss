@@ -1,0 +1,39 @@
+@use '../abstracts/' as *;
+
+.text__align {
+  @include align(flex, space-between);
+  align-items: center;
+  &-left{
+    @include align(flex);
+    flex-direction: column;
+  }
+}
+
+.text__badge {
+  @include align(flex, null, 4);
+  align-self: flex-start;
+  border-radius: rem(20);
+  padding: rem(6) rem(8);
+  background-color: $orange;
+  color: $white;
+  > i {
+    font-style: italic;
+  }
+}
+
+.box__align {
+  @include align(flex, null, 11);
+  @include space(margin, top, 20);
+  > div {
+    flex: 1;
+  }
+}
+
+.item__align{
+  @include align(flex);
+  align-items: flex-start;
+  i {
+    font-style: italic;
+    letter-spacing: rem(-1.28);
+  } 
+}

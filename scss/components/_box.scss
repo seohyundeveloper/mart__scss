@@ -23,10 +23,24 @@ $boxType: (
     'shadow': null,
     'bgColor': $green,
   ),
+  4: (
+    'class': small__green,
+    'padding': rem(14),
+    'radius': rem(12),
+    'shadow': null,
+    'bgColor': $green,
+  ),
+  5: (
+    'class': small__mint,
+    'padding': rem(14),
+    'radius': rem(12),
+    'shadow': null,
+    'bgColor': $mint,
+  ),
+
 );
 
 .box {
-  @include align(margin, top, 16);
   @for $index from 1 through list.length($boxType) {
     &.#{map-get($boxType, $index, class)} {
       padding: map-get($boxType, $index, padding);
@@ -36,3 +50,4 @@ $boxType: (
     }
   }
 }
+

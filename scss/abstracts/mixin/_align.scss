@@ -1,5 +1,11 @@
-@use "../function" as *;
+@use '../function' as *;
 
-@mixin align($text, $cordinate, $number) {
-  #{$text}-#{$cordinate}: rem($number);
+@mixin align($type, $form:null, $gap:0) {
+  display: $type;
+  gap: rem($gap);
+  @if  $type =='flex' {
+    justify-content: $form;
+  } @else if $type == 'grid' {
+    grid-template-columns: $form
+  }
 }

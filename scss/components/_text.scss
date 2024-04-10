@@ -4,9 +4,18 @@
   &__type1 {
     @include textType(18px, 700, $gray06, 29px);
   }
+  &__type2 {
+    @include textType(22px, 700, $gray1e, 30px);
+  }
+  &__type3 {
+    @include textType(16px, 500, $gray06, 23px);
+  }
 }
 .sub-title{
   &__type1 {
     @include textType(15px, 500, $gray06, 23px);
+  }
+  &__type2 {
+    @include textType(15px, 500, $gray55, 23px);
   }
 }

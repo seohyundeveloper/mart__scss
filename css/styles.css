@@ -175,7 +175,6 @@ body {
 }
 
 .alarm {
-  margin-top: 0.8rem;
   background: url(../images/ico_arrow_right_white.svg) no-repeat right 1.2rem center #1E2530;
   display: grid;
   grid-template-columns: min-content 1fr;
@@ -274,9 +273,6 @@ body {
   border-radius: 2rem;
 }
 
-.box {
-  margin-top: 1.6rem;
-}
 .box.white {
   padding: 2.4rem;
   border-radius: 1.6rem;
@@ -292,6 +288,16 @@ body {
   padding: 2.4rem;
   border-radius: 1.6rem;
   background-color: #09E27C;
+}
+.box.small__green {
+  padding: 1.4rem;
+  border-radius: 1.2rem;
+  background-color: #09E27C;
+}
+.box.small__mint {
+  padding: 1.4rem;
+  border-radius: 1.2rem;
+  background-color: #00D4EA;
 }
 
 .product-list {
@@ -396,11 +402,67 @@ body {
   display: flex;
 }
 
+.text__align {
+  display: flex;
+  gap: 0rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.text__align-left {
+  display: flex;
+  gap: 0rem;
+  flex-direction: column;
+}
+
+.text__badge {
+  display: flex;
+  gap: 0.4rem;
+  align-self: flex-start;
+  border-radius: 2rem;
+  padding: 0.6rem 0.8rem;
+  background-color: #FF6A13;
+  color: #FFFFFF;
+}
+.text__badge > i {
+  font-style: italic;
+}
+
+.box__align {
+  display: flex;
+  gap: 1.1rem;
+  margin-top: 2rem;
+}
+.box__align > div {
+  flex: 1;
+}
+
+.item__align {
+  display: flex;
+  gap: 0rem;
+  align-items: flex-start;
+}
+.item__align i {
+  font-style: italic;
+  letter-spacing: -0.128rem;
+}
+
 .title__type1 {
   font-size: 18px;
   font-weight: 700;
   color: #060606;
   line-height: 29px;
+}
+.title__type2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1E2530;
+  line-height: 30px;
+}
+.title__type3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #060606;
+  line-height: 23px;
 }
 
 .sub-title__type1 {
@@ -409,15 +471,15 @@ body {
   color: #060606;
   line-height: 23px;
 }
-
-.text__align {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.sub-title__type2 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #555D67;
+  line-height: 23px;
 }
-.text__align-left {
-  display: flex;
-  flex-direction: column;
+
+.space {
+  margin-top: 1.6rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

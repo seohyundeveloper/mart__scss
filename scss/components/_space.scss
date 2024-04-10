@@ -1,0 +1,5 @@
+@use '../abstracts/' as *;
+
+.space{
+  @include space(margin, top, 16);
+}
