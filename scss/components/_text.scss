@@ -10,6 +10,9 @@
   &__type3 {
     @include textType(16px, 500, $gray06, 23px);
   }
+  &__type4 {
+    @include textType(22px, 700, $gray06, 30px);
+  }
 }
 .sub-title{
   &__type1 {

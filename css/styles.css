@@ -468,6 +468,12 @@ body {
   color: #060606;
   line-height: 23px;
 }
+.title__type4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #060606;
+  line-height: 30px;
+}
 
 .sub-title__type1 {
   font-size: 15px;
