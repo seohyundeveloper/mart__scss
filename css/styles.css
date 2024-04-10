@@ -273,10 +273,32 @@ body {
   border-radius: 2rem;
 }
 
+.logo-list {
+  display: flex;
+  gap: 0rem;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.reservation {
+  display: flex;
+  gap: 2.4rem;
+  flex-direction: column;
+}
+.reservation > li + li:before {
+  content: "";
+  width: 29.5rem;
+  height: 0.1rem;
+  background: #E5E8F0;
+  position: absolute;
+  top: -12px;
+}
+
 .box.white {
   padding: 2.4rem;
   border-radius: 1.6rem;
-  box-shadow: 0 0.4rem 0.2rem rgba(6, 6, 6, 0.02);
+  box-shadow: 0 0.4rem 0.2rem rgba(6, 6, 6, 0.05);
   background-color: white;
 }
 .box.mint {
@@ -487,6 +509,12 @@ body {
   color: #555D67;
   line-height: 23px;
 }
+.sub-title__type3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1E2530;
+  line-height: 23px;
+}
 
 .space {
   margin-top: 1.6rem;
@@ -494,6 +522,18 @@ body {
 
 .space2 {
   margin-top: 3.6rem;
+}
+
+.space3 {
+  margin-top: 0.8rem;
+}
+
+.space4 {
+  margin-bottom: 21.4rem;
+}
+
+.space5 {
+  margin-top: 2.4rem;
 }
 
 .container {

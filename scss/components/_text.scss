@@ -21,4 +21,7 @@
   &__type2 {
     @include textType(15px, 500, $gray55, 23px);
   }
+  &__type3 {
+    @include textType(15px, 700, $gray1e, 23px);
+  }
 }

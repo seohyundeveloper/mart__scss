@@ -25,4 +25,24 @@
     }
   }
 }
+.logo-list {
+  @include align(flex, space-between);
+  align-items: center;
+  position: relative;
+}
 
+.reservation{
+  @include align(flex, null, 24);
+  flex-direction: column;
+  > li {
+    + li {
+      &:before {
+        content: '';
+        width: rem(295);
+        height: rem(1);
+        background: $graye5; 
+        @include position(absolute, top, -12px);
+      }
+    }
+  }
+}

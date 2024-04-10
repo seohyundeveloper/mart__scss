@@ -3,7 +3,15 @@
 .space{
   @include space(margin, top, 16);
 }
-
 .space2 {
   @include space(margin, top, 36);
+}
+.space3 {
+  @include space(margin, top, 8);
+}
+.space4 {
+  @include space(margin, bottom, 214);
+}
+.space5 {
+  @include space(margin, top, 24);
 }
