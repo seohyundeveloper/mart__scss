@@ -41,3 +41,8 @@
     height: rem(42.467);
   }
 }
+
+.bike-align {
+  @include align(flex, null, 69);
+  flex-direction: column;
+}

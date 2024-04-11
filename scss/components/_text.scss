@@ -13,6 +13,9 @@
   &__type4 {
     @include textType(22px, 700, $gray06, 30px);
   }
+  &__type5 {
+    @include textType(22px, 700, $black, 30px);
+  }
 }
 .sub-title{
   &__type1 {
@@ -23,5 +26,8 @@
   }
   &__type3 {
     @include textType(15px, 700, $gray1e, 23px);
+  }
+  &__type4 {
+    @include textType(11px, 500, $gray06, 16px);
   }
 }

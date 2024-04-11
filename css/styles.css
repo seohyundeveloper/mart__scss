@@ -322,6 +322,17 @@ body {
   background-color: #00D4EA;
 }
 
+.count-box {
+  padding: 0.2rem 0.6rem;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  box-sizing: border-box;
+}
+
+.bike__background {
+  background: url(../images/ico_bike.svg) no-repeat right 6.4rem bottom 1.2rem;
+}
+
 .product-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -472,6 +483,12 @@ body {
   height: 4.2467rem;
 }
 
+.bike-align {
+  display: flex;
+  gap: 6.9rem;
+  flex-direction: column;
+}
+
 .title__type1 {
   font-size: 18px;
   font-weight: 700;
@@ -496,6 +513,12 @@ body {
   color: #060606;
   line-height: 30px;
 }
+.title__type5 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 30px;
+}
 
 .sub-title__type1 {
   font-size: 15px;
@@ -514,6 +537,12 @@ body {
   font-weight: 700;
   color: #1E2530;
   line-height: 23px;
+}
+.sub-title__type4 {
+  font-size: 11px;
+  font-weight: 500;
+  color: #060606;
+  line-height: 16px;
 }
 
 .space {

@@ -51,3 +51,13 @@ $boxType: (
   }
 }
 
+.count-box {
+  padding: rem(2) rem(6);
+  background: rgba(0,0,0,0.1);
+  border-radius: rem(20);
+  box-sizing: border-box;
+}
+
+.bike__background{
+  @include background('ico_bike.svg', right rem(64) bottom rem(12));
+}
